@@ -1,22 +1,25 @@
-# VideYo
-Platform for video just for fun, relax!
+# Viewer
+HTML App to make a Viewer Website
 
 # Technologies
 	- HTML 5 
 	- CSS -> SASS
 	- JS / jQuery
-	- Php
-	- mySQL
 	- Gulp
 
-# Tuto
-	1 - Install NODE js : (https://nodejs.org/)[https://nodejs.org/] 
-	2 - Install Gulp : (http://gulpjs.com/)[https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md]
-	3 - In Terminal, in your folder path run npm install gulp
-	4 - Then always in your terminal run : npm install --save-dev
-	3 - Modify files in DEV/
-	4 - When modified, in your terminal run : gulp build 
-	5 - That's all folks, everything is created in ASSETS...
+#Whasisis?
+This is an HTML website to turn your website into a viewer mode, like a presentation for example.
+You can check the demo (here)[http://simon-tr.com/projects/viewer]
+It's a slideshow for your pages with navigation by left and right arrows, click on next or previous, menu and a direct page or by swiping on touch screen.
+
+# How to Use IT?
+	1 - Download the entire project with you.
+	2 - Add all your pages in the ul#vws_slides
+	3 - You can style them with CSS and use some JS too
+	4 - Just add your styles and scripts in Assets/ and in the Head of your HTML
+	5 - Don't Forget to declare your LI with a data-menu 
+	3 - The script will make the menu to navigate in all your slides with the data-menu
+	5 - That's all folks, enjoy!...
 
 # -- WARNING --
 DO NOT MODIFY DIRECTLY ASSETS!!!

@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
 	/*Notifications*/
+	rename = require('gulp-rename'),
 	notify = require('gulp-notify');
 
 
@@ -49,7 +50,7 @@ gulp.task('scripts', function(){
 	gulp.src(['dev/js/vendor/*.js', 'dev/js/*.js'])
 	    .pipe(jshint())
 	    .pipe(jshint.reporter('default'))
-	    .pipe(concat('main.js'))
+	    .pipe(concat('vws_main.js'))
 	    .pipe(gulp.dest('assets/js'))
 	    .pipe(uglify())
 	    .pipe(gulp.dest('assets/js'))
