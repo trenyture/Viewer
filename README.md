@@ -9,7 +9,7 @@ HTML App to make a Viewer Website
 
 #Whasisis?
 This is an HTML website to turn your website into a viewer mode, like a presentation for example.
-You can check the demo (here)[http://simon-tr.com/projects/viewer]
+You can check the demo http://simon-tr.com/projects/viewer
 It's a slideshow for your pages with navigation by left and right arrows, click on next or previous, menu and a direct page or by swiping on touch screen.
 
 # How to Use IT?
