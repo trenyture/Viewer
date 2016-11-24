@@ -1,0 +1,58 @@
+main{
+	position: fixed;
+	top:0; left:0;
+	z-index: 5;
+	display:block;
+	width: 100%;
+	padding: 9rem 6rem 5rem 6rem;
+	height:100%;
+	overflow-y: auto;
+	overflow-x:hidden;
+	@include box-sizing(border-box);
+
+	@media all and (max-width: $resp){padding: 9rem 2rem 5rem 2rem;}
+
+	ul#vws_slides{
+		position: relative;
+		display: block;
+		width:100%;
+		height:100%;
+		li{
+			position: absolute;
+			top:0; left:150%;
+			width: 100%;
+			height: 100%;
+			&.vws_active{ left:0; }
+
+			h2{
+				margin:2rem 0 1.5rem 0;
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+			p{
+				margin:1rem 0;
+			}
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	span.vws_ctrl{
+		position:fixed;
+		top:50%;
+		font-size: 5rem;
+		cursor:pointer;
+		color:$blue;
+
+		&:hover{ color:$red; }
+
+		@media all and (max-width: $resp){display:none;}
+
+		&#vws_prev{
+			left:1rem;
+		}
+		&#vws_next{
+			right:1rem;
+		}
+	}
+}

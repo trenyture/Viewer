@@ -1,0 +1,45 @@
+header{
+	position: fixed;
+	top:0; left:0;
+	width:100%;
+	padding: 2rem 6rem;
+	height:auto;
+	z-index: 10;
+	background-color:$black;
+	color:$white;
+	@include box-sizing(border-box);
+
+	@media all and (max-width: $resp){padding: 2rem;}
+
+	h1{
+		float:left;
+		margin:0;
+		font-size: 3rem;
+	}
+	#vws_nav{
+		float:right;
+		a#vws_burger{
+			color:inherit;
+			text-decoration: none;
+		}
+		#vws_menu{
+			position: fixed;
+			top:6.5rem; right:0;
+			width: 50%;
+			display: none;
+			background-color: $black;
+			cursor:pointer;
+			li{
+				list-style: none;
+				text-transform: uppercase;
+				padding:1rem;
+				text-align: center;
+				&:hover{color:$blue;}
+			}
+		}
+		&.vws_actif{
+			a#vws_burger{ color:$blue; }
+			#vws_menu{ display: block; }
+		}
+	}
+}
